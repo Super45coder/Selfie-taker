@@ -1,0 +1,62 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+ 
+<body>
+    <div class="container">
+    <center>
+        <h1>Voice Selfie App 
+
+        </h1>
+        <hr>
+        <h4 style="color:red;">Please press allow as soon as popup comes. After you give a voice command</h4>
+        
+        <div class="form-group">
+            <h3>Say "take my selfie"</h3>
+            <label>Your voice output : </label>
+            <br/>
+            <br/>
+            <h4 id="voice" style="color:black; font-size:20px; font-weight:bold;">Message will show here</h4>
+        </div>
+
+        <p>Press the Start button</p>
+        <br/>
+        <button type="submit" id="start" onclick="ask()" style="font-size:15px; background-color:yellow;">Start video</button>
+
+        <br/>
+        <br/>
+
+        <label>Your webcam : </label>
+
+        <br/>
+        <br/>
+        
+        <div id="video" style="border-width:2px; border-style:ridge; border-color:gray; height:360px; width:400px;"></div>
+
+        <br/>
+        <br/>
+
+        <label>Your selfie Will Display Here: </label>
+
+        <br/>
+        <br/>
+
+        <div id="result" style="border-width:2px; border-style:ridge; border-color:gray; height:200px; width:250px;"></div>
+
+        
+
+    </center>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
